@@ -4,7 +4,7 @@ def run_guessing_game
   random_num = rand(6) + 1
   guess = ""
   guess_count = 0
-guess_limit = 5
+  guess_limit = 5
 out_of_guess = false
 end
 

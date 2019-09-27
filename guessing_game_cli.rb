@@ -1,21 +1,19 @@
 # Code your solution here!
+#def run_guessing_game
+  #rand(6) + 1
+#end 
+
 def run_guessing_game
   
   random_num = rand(6) + 1
   guess_num_between_1_6 = ""
   user_input = "exit" 
-  out_of_guess = false
 end
 
 
 while guess_num_between_1_6 != random_num 
-    if guess_count < guess_limit
-      puts "enter guess: "
-      guess = gets.chomp()
-
-    else
-      out_of_guess = true
-end
+      puts "Take another guess: "
+      guess_num_between_1_6 = gets.chomp()
 end
 
 if user_input = "exit"
@@ -27,6 +25,4 @@ else
 end
 
 
-def run_guessing_game
-  rand(6) + 1
-end 
+

@@ -2,28 +2,28 @@
 def run_guessing_game
   
   random_num = rand(6) + 1
-  guess = ""
-  guess_count = 0
-  guess_limit = 5
-out_of_guess = false
+  guess_num_between_1_6 = ""
+  user_input = "exit" 
+  out_of_guess = false
 end
 
 
-while guess != random_num && !out_of_guess
+while guess_num_between_1_6 != random_num 
     if guess_count < guess_limit
       puts "enter guess: "
       guess = gets.chomp()
-      guess_count += 1
 
     else
       out_of_guess = true
 end
 end
 
-if out_of_guess
-  puts "You Lose!"
+if user_input = "exit"
+  puts "Goodbye!"
+  
+  puts "Sorry! the computer guessed #{random_num}"
 else
-  puts "You won!"
+  puts "You guessed the correct number!"
 end
 
 
